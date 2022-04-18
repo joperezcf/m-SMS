@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.moises_soft.m_sms.ConfigCuentaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_margin="20dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/teUser"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColorHint="#F44336"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etUsuario"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:text="rolando.per.net@gmail.com"
+                android:hint="Usuario"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/teClave"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColorHint="#F44336"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etClave"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="W5a39JRgyM4Oy5QHoq9L"
+                android:hint="Clave de acceso"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:textColor="#F44336"
+            android:onClick="guardarCuenta"
+            android:text="Crear cuenta"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
